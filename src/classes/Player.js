@@ -32,11 +32,11 @@ class Player {
   }
 
   moveLeft() {
-    this.position -= this.velocity
+    this.position.x -= this.velocity
   }
 
   moveRight() {
-    this.position += this.velocity
+    this.position.x += this.velocity
   }
 
   draw(ctx) {
