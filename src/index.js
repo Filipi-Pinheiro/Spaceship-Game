@@ -59,12 +59,12 @@ const gameLoop = () => {
   }
 
   if (keys.left && player.position.x >= 0) {
-    player.moveLeft
+    player.moveLeft()
     ctx.rotate(-0.15)
   }
 
   if (keys.right  && player.position.x <= canvas.width - player.width) {
-    player.moveRight
+    player.moveRight()
     ctx.rotate(0.15)
   }
 
